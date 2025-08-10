@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="eamil" required>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="massage" rows="4"></textarea>
+        <br><br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br><br>
+        <label>Interests:</label>
+        <input type="checkbox" name="Interest" value="coding">Coding
+        <input type="checkbox" name="Interest" value="design">Design
+        <br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="USA">USA</option>
+            <OPtion value="UK">UK</OPtion>
+            <OPtion value="INDIA">INDIA</OPtion>
+        </select>
+        <br><br>
+        <label for="file">Upload File</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+</body>
+</html>

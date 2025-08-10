@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+}
+header{
+    background-color:#e8ffd7;
+    /*cplor:;*//*text color can be set here*/
+    padding: 1rem;
+    text-align:center;
+}
+nav{
+    background-color:#93da97;
+    text-align: right;
+    padding: 1rem;
+}
+nav a{
+    color:#e8ffd7;
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+.main-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* border: solid 5px #ff0a0a; */
+}
+main{
+    /* border:solid 4px #4edb27; */
+    background-color: #5e936c;
+    padding:1 rem;
+    flex-grow: 1;
+}
+aside{
+    background-color: #3e5f44;
+    color: #e8ffd7;
+    padding: 1 rem;
+    /* flex-grow: 1; */
+}
+footer{
+    background-color: #e8ffd7;
+    color: #3e5f44;
+}
+.sidebar{
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    /* border: solid 5px #ff0a0a; */
+    padding-top:6px;
+    text-align:center;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.sidebar a{
+    color:black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.sidebar a:hover{
+    color: rgb(98, 110, 11);
+    text-decoration: none;
+    background-color: #e8ffd7;
+}

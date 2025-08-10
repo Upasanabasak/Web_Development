@@ -1,0 +1,22 @@
+body{
+    background-color:antiquewhite;
+    text-align:left;
+    border:2px solid red;
+    border-radius:12px;
+    padding-left:50px;
+    padding-right:20px;
+    padding-top:25px;
+    padding-bottom:20px;
+    color:indigo;
+    font-family:" oblique";
+}
+h1{
+    color:coral;
+    text-align:center;
+    text-decoration:underline;
+    text-transform:uppercase;
+    text-shadow:2px 2px rosybrown;
+}
+h2{
+    text-decoration:underline;
+}

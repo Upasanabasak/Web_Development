@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(241, 250, 208);
+        }
+    </style>
+</head>
+<body>
+    <!-- To use form we need <form> tag -->
+        <form action="">
+            <label for="fn">First Name:
+                <input type="text" name="fn" id="fn" placeholder="Enter Your First Name" required>
+            </label>
+            
+            <label for="ln">Last Name:
+                <input type="text" name="ln" id="ln" placeholder="Enter Your Last Name" required>
+            </label>
+            
+            <label for="Address">Address:
+                <input type="text" name="Address" id="Address" placeholder="Enter Your Address" required>
+            </label>
+            
+            <label for="email">Email:
+                <input type="email" name="mail" id="mail" placeholder="Enter Your Mail" required autocomplete="email">
+            </label>
+            
+            <label for="password">Password:
+                <input type="password" name="password" placeholder="Enter your Password" id="password" required minlength="8">
+            </label>
+            
+            <label for="radio">Gender:
+                <input type="radio" name="radio" value="yes">Yes
+                <input type="radio" name="radio" value="no">No
+            </label>
+            <label for="skills">Skills:
+                <input type="checkbox" name="skills" value="html">HTML
+                <input type="checkbox" name="skills" value="css">CSS
+                <input type="checkbox" name="skills" value="js">JAVASCRIPT
+                <input type="checkbox" name="skills" value="pyton">PYTHON
+                <input type="checkbox" name="skills" value="java">JAVA
+                <input type="checkbox" name="skills" value="c++">C++
+                <input type="checkbox" name="skills" value="c#">C#
+            </label>
+            <label for="dob">Date of birth
+                <input type="date" name="dob" id="dob">
+            </label>
+            <label for="description">Describe yourself in 100 words
+                <textarea name="description" id="description"></textarea>
+            </label>
+            <button>Submit</button>
+        </form>
+</body>
+</html>

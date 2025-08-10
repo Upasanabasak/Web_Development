@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            background-color: turquoise;
+        }
+        .div-one{
+            background-color: yellowgreen;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        #div-one{
+            font-size: 40px;
+            color: tomato;
+        }
+        #div-last{
+            font-size: 50px;
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div-one" id="div-one">I am a DIV</div>
+    <div>
+        <p>I am a second DIV</p>
+    </div>
+    <div>I am a second DIV</div>
+    <div>I am a second DIV</div>
+    <div class="div-one" id="div-last">I am a second DIV</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(241, 250, 208);
+            border:2px solid rgb(245, 133, 133);
+            width: auto;
+            height: auto;
+            margin: 200px;
+            padding: 50px;
+        }
+        label{
+            display: block;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: rgb(131, 189, 197);
+            color: white;
+            border-radius: 5px;
+            margin: 20 px auto;
+            bottom: unset;
+        }
+        button.hover{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- To use form we need <form> tag -->
+        <form action="">
+            <label for="fn">Full Name:
+                <input type="text" name="fn" id="fn" placeholder="Enter Your Full Name" required>
+            </label>
+            
+            <label for="email">Email:
+                <input type="email" name="mail" id="mail" placeholder="Enter Your Mail" required autocomplete="email">
+            </label>
+            
+            <label for="password">Password:
+                <input type="password" name="password" placeholder="Enter your Password" id="password" required minlength="8">
+            </label>
+            
+            <label for="radio">Gender:
+                <input type="radio" name="radio" value="Female">Female
+                <input type="radio" name="radio" value="Male">Male
+            </label>
+
+            <label for="hobbies">Hobbies:
+                <input type="checkbox" name="hobbies" id="hobbies">Drawing
+                <input type="checkbox" name="hobbies" id="hobbies">Gardening
+                <input type="checkbox" name="hobbies" id="hobbies">Reading
+                <input type="checkbox" name="hobbies" id="hobbies">Music
+            </label>
+            
+            <button>Submit</button>
+        </form>
+</body>
+</html>
