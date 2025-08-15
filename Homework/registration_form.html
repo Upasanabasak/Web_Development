@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        form{
+            border: 4px solid brown;
+            margin: 60px 400px 20px 400px;
+            padding: 10px 35px 10px 35px;
+            color: rgb(142, 43, 109);
+            box-shadow:  10 16cqmax 50px rgba(226, 100, 100, 0.1);
+            background-color: rgb(231, 210, 210);
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        label {
+            display: block;
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        button {
+            background-color: rgb(194, 71, 71);
+            /* color: white; */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            /* centerinng the button */
+            /* display: block; */
+            margin: 0 60px 0 55px;
+        }
+        button:hover {
+            background-color: #5a6cf5;
+        }
+        /* input[type="checkbox"]
+        {
+            display:block;
+            /* padding-left: 50px;
+            margin-left: 500px; */
+    </style>
+</head>
+<body>
+    <form action="">
+        <p>Registration Form</p>
+        <label for="name">Enter Name:
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required autocomplete="name">
+        </label>
+        <label for="password">Enter Password:
+            <input type="text" name="password" id="password" placeholder="Enter Your password" required autocomplete="new-password">
+        </label>
+        <label for="address">Enter Address:
+            <textarea name="description" id="address" placeholder="Enter Your Address" required autocomplete="address"></textarea>
+        </label>
+        <label for="select name">Select Name:
+            <div style="display: flex;flex-direction:column;padding-left: 120px;">
+            <label><input type="checkbox" name="select name" value="select name">Hockey </label>
+            <label><input type="checkbox" name="select name" value="select name">Badminton </label>
+            <label><input type="checkbox" name="select name" value="select name">Cricket </label>
+            <label><input type="checkbox" name="select name" value="select name">Volleyball </label>      
+            </div>
+        </label>
+        <label for="gender">Gender:
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+        </label>
+        <label for="s">Your Age
+        <select name="s" id="s">
+        <option value="s">Select Your Age</option>
+        <option value="s">20</option>
+        <option value="s">21</option>
+        <option value="s">22</option>
+        <option value="s">23</option>
+        <option value="s">24</option>
+        <option value="s">25</option>
+        <option value="s">26</option>
+        <option value="s">27</option>
+        <option value="s">28</option>
+        <option value="s">29</option>
+        <option value="s">30</option>
+        </select>
+        </label>
+        <label for="profile-photo">Select Photo:
+        <input type="file" name="profile-photo" id="profile-photo" accept="image/*">
+        </label>
+        <button>Click Me</button>
+        <button>Reset</button>
+        <button>Submit Form</button>
+    </form>
+</body>
+</html>
