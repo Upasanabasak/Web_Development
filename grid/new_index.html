@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fbfbfb;
+            padding: 10px;
+            margin: 0;
+            border: 5px solid black;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .index-grid{
+            display: grid;
+            grid-template-columns: 150px 350px 100px 150px 250px;
+            /* grid-template-rows: ; */
+            /* gap: 1px; */
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+            /* border: 2px solid black; */
+        }
+        .cell{
+            border: 1px solid black;
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* text-align: ; */
+        }
+        .ano{
+            justify-content: center;
+        }
+        .heading{
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        p{
+            font-size: 15px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Index</h1>
+    <div class="index-grid">
+        <div class="cell heading">Assignment No.</div>
+        <div class="cell heading">Assignment</div>
+        <div class="cell heading">Date</div>
+        <div class="cell heading">Page no.</div>
+        <div class="cell heading">Signature</div>
+
+        <div class="cell ano">1.</div>
+        <div class="cell descriptions"><p>Home Page Design:</p>Includes header, footer,
+            and horizontal/vertical navigation bar with dropdowns for Home, Gallery,
+            Food Menu (Starter, Main Course, Beverages), Place Order, Table Booking,
+            and Contact Us.</div>
+        <div class="cell date">01-27</div>
+        <div class="cell page">08/04/2025</div>
+        <div class="cell signature"></div>
+
+        <div class="cell ano">2.</div>
+        <div class="cell descriptions"><p>Gallery Page: </p> Displays images and descriptions of
+            Achievements & Awards, and various restaurant branches.</div>
+        <div class="cell date">28-39</div>
+        <div class="cell page">16/04/2025</div>
+        <div class="cell signature"></div>
+
+        <div class="cell ano">3.</div>
+        <div class="cell descriptions"><p>Food Menu Pages: </p> Separate pages for Starter, 
+            Main Course, and Beverages with category filters (Veg, Non-Veg, 
+            Chinese, Indian, Thai, Korean).</div>
+        <div class="cell date">40-102</div>
+        <div class="cell page">22/04/2025</div>
+        <div class="cell signature"></div>
+
+        <div class="cell ano">4.</div>
+        <div class="cell descriptions"><p>Place Order Page:</p> Order form with two sections:
+            Customer Details and Food Order Details</div>
+        <div class="cell date">103-114</div>
+        <div class="cell page">28/04/2025</div>
+        <div class="cell signature"></div>
+
+        <div class="cell ano">5.</div>
+        <div class="cell descriptions"><p>Table Booking Page:</p>p>Booking form with Booking 
+            ID, Date, Time, Number of Persons, and Table Type</div>
+        <div class="cell date">115-122</div>
+        <div class="cell page">13/05/2025</div>
+        <div class="cell signature"></div>
+
+        <div class="cell ano">6.</div>
+        <div class="cell descriptions"><p>Contact Us Page:</p> Form to collect user 
+            feedback including Name, Email, Contact No, and Comments</div>
+        <div class="cell date">123-129</div>
+        <div class="cell page">23/07/2025</div>
+        <div class="cell signature"></div>
+
+    </div>
+</body>
+</html>

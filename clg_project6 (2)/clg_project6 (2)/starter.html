@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Foods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="food_menu.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+     <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <!-- Navbar (updated to match HOME.html) -->
+    <nav>
+        <div class="nav-logo">
+            <a href="HOME.html" class="logo-link">
+                <img src="picture/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Masala</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="HOME.html">Home</a> 
+            <a href="gallary.html">Gallery</a>
+            <div class="has-dropdown">
+                <a href="#" class="active">Food Menu</a>
+                <div class="dropdown">
+                    <a href="starter.html" class="active">Starter</a>
+                    <a href="main_course.html">Main Course</a>
+                    <a href="beverages.html">Beverages</a>
+                </div>
+            </div>
+            <a href="placeOrder.html">Place Order</a>
+            <a href="tableBooking.html">Table Booking</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <!-- Body Content -->
+    <div class="page-container">
+        <h3 class="menu-title" style="text-align: center;">Welcome to out starter menu</h3>
+        <p class="menu-subtitle" style="text-align: center;">Explore our delicious starter options below and kickstart your meal with a burst of flavor!</p>
+         <br>
+        <div class="menu-grid">
+            <!-- card 1 -->
+            <div class="menu-card">
+                <div class="card-image-container" >
+                    <img class="card-image"  src="picture/potato-kebab.jpg.webp" alt="dish 1">
+                    <!-- Add this line for veg items -->
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Potato Kebab <span class="cuisine-label indian">Indian</span></div>
+                    <div class="card-description">4 piece potato-kebab with tomato kachap....</div>
+                <div class="card-footer">
+                        <div class="price"> ₹20</div>
+                        <div class="per">per plate</div>
+                    
+                    <div class="order-button">
+                        <button>Order Now</button>
+                </div>
+                </div>
+            </div> 
+            </div>
+             <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/refreshing-korean-melon-salad-for-hot-summer-days-recipe-main-photo.webp" alt="dish 6">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Melon Salad
+                        
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">Melon Salad, delicious korean starter</div>
+                <div class="card-footer">
+                    <div class="price"> ₹70 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- card 2 -->
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image"  src="picture/paneer-tikka-11-768x337.jpg.webp" alt="dish 2">
+                    <!-- Add this line for veg items -->
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Panneer Tikka
+                    <!-- <span class="card-title-text">Panneer Tikka</span> -->
+                    <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">2 piece panner-tikka with tomato kachap....</div>
+                <div class="card-footer">
+                    <div class="price"> ₹100 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+             <!-- card 3 -->
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/aloo-dal-tikki.jpg.webp" alt="dish 3">
+                    <!-- Add this line for veg items -->
+                        <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Allo <br>
+                        Dal Tikki
+                        <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">8 piece aloo-dal-tikki with tomato kachap....</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/korean-chicken-bulgogi-kimbap-recipe-main-photo.webp " alt="dish 6">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Chiken Bulgogi Kimbap
+                        
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">Chiken Bulgogi Kimbap, delicious korean starter</div>
+                <div class="card-footer">
+                    <div class="price"> ₹200 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/cheese-balls-1.jpg.webp" alt="dish 4">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Cheese Balls
+                          <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">6 piece cheese-ball with tomato kachap...</div>
+                <div class="card-footer">
+                    <div class="price"> ₹80 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/hobak-jeon-korean-style-zucchini-fritters-recipe-main-photo.webp" alt="dish 6">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Zucchini fritters
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">Chiken Bulgogi Kimbap, delicious korean starter</div>
+                <div class="card-footer">
+                    <div class="price"> ₹200 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/crispy-sweet-potato-768x512.jpg.webp" alt="dish 5">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Crispy  Potato
+                        <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">cripsy-sweet-potato with tomato kachap....</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/crispy-corn-chaat-1.jpg.webp" alt="dish 6">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Crispy Corn Chaat
+                        
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">crispy-corn-chaat , delicious korean starter</div>
+                <div class="card-footer">
+                    <div class="price"> ₹70 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/bread-roll-6-768x432.jpg.webp" alt="dish 7">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Bread Roll
+                        <span class="cuisine-label thai">Thai</span>
+                    </div>
+                    <div class="card-description">4 piece Bread-Roll with tomato kachap(staff panner)....</div>
+                <div class="card-footer">
+                    <div class="price"> ₹100 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/idli-chaat.jpg.webp" alt="dish 8">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Idli Chaat
+                        <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">Soft idlis tossed with tangy chutneys and crunchy toppings.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/honey-chili-cauliflower-768x432.jpg.webp" alt="dish 9">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Honey Chili Cauliflower
+                        <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">cauliflower tossed in a sweet and spicy sauce.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹60 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/memil-jeonbyeong-buckwheat-crepe-style-fresh-spring-rolls-recipe-main-photo.webp" alt="dish 6">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Spring Rolls
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">Chiken Bulgogi Kimbap, delicious korean starter</div>
+                <div class="card-footer">
+                    <div class="price"> ₹150 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/honey-chili-potatoes-768x432.jpg.webp" alt="dish 10">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Honey Chilli Potatoes
+                        <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">potato fingers tossed in a sweet and spicy sauce.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹60 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/french-fries-3-768x426.jpg.webp" alt="dish 11">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Korean Fries
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">Crispy fries with Korean spices.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹40 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/bread-pizza-3-768x512.jpg.webp" alt="dish 12">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Bread Pizza
+                        <span class="cuisine-label thai">Thai</span>
+                    </div>
+                    <div class="card-description">2 pieces bread topped with fresh veggies and cheese, baked to perfection.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/Screenshot 2025-09-08 185556.png" alt="dish 4">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Chilli paneer          
+                    <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">6 piece cheese-ball with tomato kachap...</div>
+                <div class="card-footer">
+                    <div class="price"> ₹80 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/cheesy-vegetable-rice-fingers.jpg.webp" alt="dish 13">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Cheesy  Rice Fingers
+                        <span class="cuisine-label korean">Korean</span>
+                    </div>
+                    <div class="card-description">rice fingers with veggies and cheese, tangy dip.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/gobhi-manchurian-1-768x432.jpg.webp" alt="dish 14">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Gobi Manchurian
+                        <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">cauliflower tossed in Indo-Chinese sauce.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/crispy-aloo-fry-768x512.jpg.webp" alt="dish 15">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Crispy Aloo Fry
+                        <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">Crispy Aloo Fry with tomato kachup....</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/moong-dal-bhel.jpg.webp" alt="dish 16">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Moong Dal Bhel
+                        <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">Crispy moong dal mixed with fresh veggies and tangy spices.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹500 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/Screenshot 2025-09-08 183748.png" alt="dish 4">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Pan Fried Momos
+                          <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">6 piece cheese-ball with tomato kachap...</div>
+                <div class="card-footer">
+                    <div class="price"> ₹80 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/besan-dosa-1.jpg.webp" alt="dish 17">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Besan <br>Dosa
+                        <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">Crispy gram flour dosa served with chutney served with chatney</div>
+                <div class="card-footer">
+                    <div class="price"> ₹50 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/vegetable-bread-sandwih-768x384.jpg.webp" alt="dish 18">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title"> Bread Sandwich
+                        <span class="cuisine-label thai">Thai</span>
+                    </div>
+                    <div class="card-description">Fresh vegetable bread sandwich served with tangy dip.</div>
+                <div class="card-footer">
+                    <div class="price"> ₹90 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/Screenshot 2025-09-08 183702.png" alt="dish 4">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Veg Manchurian Dry
+                          <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">6 piece cheese-ball with tomato kachap...</div>
+                <div class="card-footer">
+                    <div class="price"> ₹80 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/spinach-cheese-balls-768x432.jpg.webp" alt="dish 19">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Spinach and Cheese Rolls
+                        <span class="cuisine-label thai">Thai</span>
+                    </div>
+                    <div class="card-description">Crispy rolls stuffed with spinach and cheese served with red souce</div>
+                <div class="card-footer">
+                    <div class="price"> ₹500 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/Screenshot 2025-09-08 183738.png" alt="dish 4">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Steamed Wonton
+                          <span class="cuisine-label chinese">Chinese</span>
+                    </div>
+                    <div class="card-description">6 piece cheese-ball with tomato kachap...</div>
+                <div class="card-footer">
+                    <div class="price"> ₹80 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-card">
+                <div class="card-image-container">
+                    <img class="card-image" src="picture/fruit-chaat-2-768x576.jpg.webp" alt="dish 20">
+                    <div class="food-type veg"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">Fruit <br> Chaat
+                        <span class="cuisine-label indian">Indian</span>
+                    </div>
+                    <div class="card-description">Fresh mixed fruits tossed with tangy spices and himalayan salt</div>
+                <div class="card-footer">
+                    <div class="price"> ₹100 </div>
+                    <div class="per">per plate</div>
+                    <div class="order-button">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+         </div>
+    </div>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <div class="nav-logo">
+                <a href="HOME.html" class="logo-link">
+                    <img src="picture/logo.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">Masala</span>
+                </a>
+            </div>
+            <p>Creating unforgettable food experiences. We believe food is therapy and try to put a smile on your face with our culinary skills.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Our Addresses</h4>
+            <address>34, Karl Marx Sarani, Khidderpore,<br>Kolkata – 700023</address>
+            <address>9, Kazi Nazrul Islam Avenue,<br>Kaikhali Crossing, Kolkata- 700052</address>
+        </div>
+        <div class="footer-links">
+            <h4>Business Hours</h4>
+            <p>Mon - Sun: 11:00 AM – 11:00 PM</p>
+        </div>
+        <div class="footer-links">
+            <h4>Contact Us</h4>
+            <h5>Khidderpore</h5>
+            <p><a href="tel:+918481848484"><i class="fas fa-phone"></i> +91 8481848484</a></p>
+            <h5>Kaikhali</h5>
+            <p><a href="tel:+919903980011"><i class="fas fa-phone"></i> +91 99039 80011</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Masala Restaurant. All Rights Reserved.</p>
+    </div>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+</footer>
+</body>
+</html>

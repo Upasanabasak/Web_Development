@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            background-color: rgb(247, 237, 225);
+        }
+        table{
+            /* border-radius: 1px  solid rgb(244, 240, 10); */
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 5px 8px rgba(0,0,0,0.5);
+        }
+        table:hover{
+            /* transform: scale(1.05); */
+            transform:  scaleY(1.05);
+        }
+        th, td{
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid rgb(19, 27, 63);
+            
+        }
+        tr:nth-child(even){
+            background-color: rgb(235, 250, 187);
+        }
+        tr:hover{
+            background-color: cadetblue;
+        }
+        th{
+            background-color: rgb(151, 210, 190);
+            color: azure;
+        }
+        caption{
+            caption-side: top;
+            font-weight: bolder;
+            margin: 20px 0 20px 0 ;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Books</caption>
+        <tr>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Available Stock</th>
+        </tr>
+        <tr>
+            <td>Anci C</td>
+            <td>Study Book</td>
+            <td>399.99</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Atomic Habits</td>
+            <td>Self-Help</td>
+            <td>499.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Think Like a Monk</td>
+            <td>Motivational</td>
+            <td>399.00</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>The Psychology of Money</td>
+            <td>Finance</td>
+            <td>450.00</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Ikigai</td>
+            <td>Philosophy</td>
+            <td>350.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Sapiens</td>
+            <td>History</td>
+            <td>599.00</td>
+            <td>5</td>
+        </tr>
+    </table>
+</body>
+</html>

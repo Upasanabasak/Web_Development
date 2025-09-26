@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- load Locosta for About section -->
+    <link href="https://fonts.googleapis.com/css2?family=Locosta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="tableBooking.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="HOME.html" class="logo-link">
+                <img src="picture/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Masala</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="HOME.html">Home</a> 
+            <a href="gallary.html">Gallery</a>
+            <div class="has-dropdown">
+                <a href="#">Food Menu</a>
+                <div class="dropdown">
+                    <a href="starter.html">Starter</a>
+                    <a href="main_course.html">Main Course</a>
+                    <a href="beverages.html">Beverages</a>
+                </div>
+            </div>
+            <a href="placeOrder.html">Place Order</a>
+            <a href="tableBooking.html" class="active">Table Booking</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <div class="booking-container">
+        <h2>Book your table</h2>
+        <form class="booking-form">
+            <div class="form-group">
+            <label for="bookingId">Booking ID</label>
+            <input type="text" id="bookingId" name="bookingId" placeholder="Enter Booking ID" required>
+            </div>
+            <div class="form-group">
+            <label for="bookingDate">Booking Date</label>
+            <input type="date" id="bookingDate" name="bookingDate" placeholder="Enter Booking Datee" required>
+            </div>
+            <div class="form-group">
+            <label for="bookingTime">Time</label>
+            <input type="time" id="bookingTime" name="bookingTime"  required>
+            </div>         
+            <div class="form-group">
+            <label for="numPersons">Number of Persons</label>
+            <input type="number" id="numPersons" name="numPersons" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+            <label for="tableType">No. of Tables</label>
+            <select  id="tableType" name="tableType"  required>
+                <option value="4"> 4 seater </option>
+                <option value="6"> 6 seater </option>
+                <option value="8"> 8 seater </option>
+            </select>
+            </div>
+           <button type="submit" class="submit-btn">Book table </button> 
+        </form>
+        <div class="popup" id="popup">
+                <h3>Table booked successfully!</h3>
+                <p>Your table has been booked. We look forward to serving you!</p>
+                <button class="close-btn">Close</button>    
+         </div>
+         <script>
+            document.querySelector('.submit-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent form submission
+                // Show the popup
+                document.getElementById('popup').style.display = 'block';
+            });
+         </script>
+    </div>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <div class="nav-logo">
+                <a href="HOME.html" class="logo-link">
+                    <img src="picture/logo.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">Masala</span>
+                </a>
+            </div>
+            <p>Creating unforgettable food experiences. We believe food is therapy and try to put a smile on your face with our culinary skills.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Our Addresses</h4>
+            <address>34, Karl Marx Sarani, Khidderpore,<br>Kolkata – 700023</address>
+            <address>9, Kazi Nazrul Islam Avenue,<br>Kaikhali Crossing, Kolkata- 700052</address>
+        </div>
+        <div class="footer-links">
+            <h4>Business Hours</h4>
+            <p>Mon - Sun: 11:00 AM – 11:00 PM</p>
+        </div>
+        <div class="footer-links">
+            <h4>Contact Us</h4>
+            <h5>Khidderpore</h5>
+            <p><a href="tel:+918481848484"><i class="fas fa-phone"></i> +91 8481848484</a></p>
+            <h5>Kaikhali</h5>
+            <p><a href="tel:+919903980011"><i class="fas fa-phone"></i> +91 99039 80011</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Masala Restaurant. All Rights Reserved.</p>
+    </div>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+</footer>
+</body>
+</html>

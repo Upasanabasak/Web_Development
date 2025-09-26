@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;            /* ensure no extra margin */
+    padding: 0;           /* remove padding */
+}
+/* Add padding to the main content instead */
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery-card{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(83, 82, 82, 0.1);
+}
+.gallery-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.gallery-card .description{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.description h3{
+    margin-bottom: 5px;
+}
+.gallery-card:hover .description{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-card:hover img{
+    transform: scale(1.1);
+}
+
+/* Just in case—force nav to the very top */
+nav {
+    margin-top: 0;
+    width: 100%;
+}
+.nav-links a.active {
+    color: #d6b927 !important;
+}
+.award-section {
+    width: 100%;
+    margin: 40px 0 32px 0;
+}
+.award-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #1B3C53;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1B3C53;
+    margin-bottom: 20px;
+}
+.award-card{
+    background-color: #fff;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+    text-align: center;
+}
+.award-card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.award-card h3{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+.award-card p{
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+.branch-section {
+    width: 100%;
+    margin: 40px 0 32px 0;
+}
+.branch-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #1B3C53;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1B3C53;
+    margin-bottom: 20px;
+}
+.branch-card{
+    background-color: #fff;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+    text-align: center;
+}
+.branch-card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.branch-card h3{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}

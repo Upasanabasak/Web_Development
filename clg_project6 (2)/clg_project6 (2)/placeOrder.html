@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceOrder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style(placeOrder).css">
+     <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <!-- Navbar (updated to match HOME.html) -->
+    <nav>
+        <div class="nav-logo">
+            <a href="HOME.html" class="logo-link">
+                <img src="picture/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Masala</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="HOME.html">Home</a> 
+            <a href="gallary.html">Gallery</a>
+            <div class="has-dropdown">
+                <a href="#">Food Menu</a>
+                <div class="dropdown">
+                    <a href="starter.html">Starter</a>
+                    <a href="main_course.html">Main Course</a>
+                    <a href="beverages.html">Beverages</a>
+                </div>
+            </div>
+            <a href="placeOrder.html" class="active">Place Order</a>
+            <a href="tableBooking.html">Table Booking</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+    <!-- Body Content -->
+    <div class="order-container">
+        <div class="order-summary">
+            <h2>Your Order</h2>
+            <div class="order-items">
+                <div class="food-item">
+                    <span class="food-name">Bangali Mach Thali</span>
+                    <div class="item-details">
+                        <span class="food-rate">₹400.00</span>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <span class="item-cost">₹1200.00</span>
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <span class="food-name">Chicken Tikka</span>
+                    <div class="item-details">
+                        <span class="food-rate">₹200.00</span>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <span class="item-cost">₹200.00</span>
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <span class="food-name">South Indian Thali</span>
+                    <div class="item-details">
+                        <span class="food-rate">₹500.00</span>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <span class="item-cost">₹500.00</span>
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <span class="food-name">Chicken Leg Piece</span>
+                    <div class="item-details">
+                        <span class="food-rate">₹40.00</span>
+                        <input type="number" class="quantity" value="1" min="1">
+                        <span class="item-cost">₹40.00</span>
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total-price">
+                <span>Total</span>
+                <span class="price-value">₹1140.00</span>
+            </div>
+        </div>
+        <div class="customer-form">
+            <h3>Your Details</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="order-no">Order No</label>
+                        <input type="text" id="order-no" name="order-no" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-of-order">Date</label>
+                        <input type="date" id="date-of-order" name="date-of-order" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name" name="customer-name" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-no">Contact No</label>
+                        <input type="tel" id="contact-no" name="contact-no" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Confirm & Pay</button>
+            </form>
+        </div>
+    </div>
+     <footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <div class="nav-logo">
+                <a href="HOME.html" class="logo-link">
+                    <img src="picture/logo.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">Masala</span>
+                </a>
+            </div>
+            <p>Creating unforgettable food experiences. We believe food is therapy and try to put a smile on your face with our culinary skills.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Our Addresses</h4>
+            <address>34, Karl Marx Sarani, Khidderpore,<br>Kolkata – 700023</address>
+            <address>9, Kazi Nazrul Islam Avenue,<br>Kaikhali Crossing, Kolkata- 700052</address>
+        </div>
+        <div class="footer-links">
+            <h4>Business Hours</h4>
+            <p>Mon - Sun: 11:00 AM – 11:00 PM</p>
+        </div>
+        <div class="footer-links">
+            <h4>Contact Us</h4>
+            <h5>Khidderpore</h5>
+            <p><a href="tel:+918481848484"><i class="fas fa-phone"></i> +91 8481848484</a></p>
+            <h5>Kaikhali</h5>
+            <p><a href="tel:+919903980011"><i class="fas fa-phone"></i> +91 99039 80011</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Masala Restaurant. All Rights Reserved.</p>
+    </div>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+</footer>
+</body>
+</html>

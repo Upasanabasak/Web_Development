@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body{
+            border: 5px solid black;
+            padding: 30px;
+            margin: 20px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .grid-container{
+            background-color: rgb(231, 232, 230);
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            width: 100%;
+            gap: 0;
+        }
+        .grid-container div{
+            border-radius: 0;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 2px;
+            border: 2px solid black;
+        }
+        p.bold{
+            font-weight: 5px bold;
+        }
+        .head{
+            text-align: center;
+        }
+        .info{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Index</h1>
+    <div class="grid-container">
+        <div class="head">Assignment No.</div>
+        <div class="head">Assignment</div>
+        <div class="head">Page No.</div>
+        <div class="head">Date</div>
+        <div class="head">Signature</div>
+    </div>
+    <div class="grid-container">
+        <div class="info">1</div>
+        <div class="info"><p class="bold">Home Page Design:</p> Includes header, footer, 
+            and horizontal/vertical navigation bar with dropdowns for Home, Gallery, 
+            Food Menu (Starter, Main Course, Beverages), Place Order, Table Booking, 
+            and Contact Us.</div>
+        <div class="info">01-27</div>
+        <div class="info">08/04/2025</div>
+        <div class="info"></div>
+    </div>
+    <div class="grid-container">
+        <div class="info">2</div>
+        <div class="info"><p class="bold">Gallery Page:</p>Displays images and descriptions of
+            Achievements & Awards, and various restaurant branches.</div>
+        <div class="info">28-39</div>
+        <div class="info">16/04/2025</div>
+        <div class="info"></div>
+    </div>
+    <div class="grid-container">
+        <div class="info">3</div>
+        <div class="info"><p class="body">Food Menu Pages:</p>Separate pages for Starter, 
+            Main Course, and Beverages with category filters (Veg, Non-Veg, 
+            Chinese, Indian, Thai, Korean).</div>
+        <div class="info">40-102</div>
+        <div class="info">22/04/2025</div>
+        <div class="info"></div>
+    </div>
+    <div class="grid-container">
+        <div class="info">4</div>
+        <div class="info"><p class="body">Place Order Page:</p> Order form with two sections:
+            Customer Details   and
+             Food Order Details</div>
+        <div class="info">103-114</div>
+        <div class="info">28/04/2025</div>
+        <div class="info"></div>
+    </div>
+    <div class="grid-container">
+        <div class="info">5</div>
+        <div class="info"><p class="body">Table Booking Page:</p>p>Booking form with Booking 
+            ID, Date, Time, Number of Persons, and Table Type</div>
+        <div class="info">115-122</div>
+        <div class="info">13/05/2025</div>
+        <div class="info"></div>
+    </div>
+    <div class="grid-container">
+        <div class="info">6</div>
+        <div class="info"><p class="body">Contact Us Page:</p> Form to collect user 
+            feedback including Name, Email, Contact No, and Comments</div>
+        <div class="info">123-129</div>
+        <div class="info">23/07/2025</div>
+        <div class="info"></div>
+    </div>
+</body>
+</html>
