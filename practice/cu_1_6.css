@@ -39,9 +39,9 @@ ol{
     margin: 0 100px;
     padding: 10px ;
 }
-ol:hover{
+/* ol:hover{
     color: rgb(219, 151, 51);
-}
+} */
 a:hover{
     color: rgb(219, 151, 51);
 }
@@ -55,4 +55,10 @@ a:hover{
 .video{
     display: flex;
     justify-content: center;
- }
+}
+.marq{
+    font-size: 20px;
+    color: rgb(105, 31, 215);
+    padding: 4px;
+    margin: 20px;
+}
