@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: auto;
+}
+body{
+    background-color: rgb(232, 222, 244);
+}
+h1{
+    text-align: center;
+    color: rgba(49, 13, 97, 0.61);
+    padding: 20px;
+}
+.text1{
+    margin: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(137, 90, 181);
+    /* font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+}
+.pandels{
+    font-size: 20px;
+    margin: 15px;
+    padding: 12px 0;
+    color: rgb(239, 21, 188);
+    text-decoration: underline;
+}
+ol{
+    /* gap: 200px; */
+    color: rgb(8, 96, 66);
+    font-size: larger;
+    margin: 0 100px;
+    padding: 10px ;
+}
+ol:hover{
+    color: rgb(219, 151, 51);
+}
+a:hover{
+    color: rgb(219, 151, 51);
+}
+.video-heading{
+    font-size: 20px;
+    margin: 15px;
+    padding: 12px 0;
+    color: rgb(239, 21, 188);
+    text-decoration: underline;
+}
+.video{
+    display: flex;
+    justify-content: center;
+ }
