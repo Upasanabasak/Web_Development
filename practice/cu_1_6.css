@@ -62,3 +62,27 @@ a:hover{
     padding: 4px;
     margin: 20px;
 }
+.audio-heading{
+    font-size: 20px;
+    margin: 15px;
+    padding: 12px 0;
+    color: rgb(239, 21, 188);
+    text-decoration: underline;
+}
+.audio{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.audio audio{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+}
+.audio audio::-webkit-media-controls-panel{
+    background-color: blueviolet;
+}
+.audio audio::-webkit-media-controls-play-button{
+    background-color: cadetblue;
+    border-radius: 50%;
+}
