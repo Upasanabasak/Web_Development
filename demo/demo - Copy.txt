@@ -8,12 +8,11 @@
 <body>
     <p>Push into github using git terminal.</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    <p style="color:blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Molestias quas, perspiciatis illo inventore nobis aliquam culpa expedita 
         magni vel nemo?
-		<br>
-		hello
-		Hi
+<p style="color:blue"></p>
+hi
     </p>
     
 </body>

@@ -11,9 +11,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Molestias quas, perspiciatis illo inventore nobis aliquam culpa expedita 
         magni vel nemo?
-		<br>
-		hello
-		Hi
+hi
     </p>
     
 </body>
