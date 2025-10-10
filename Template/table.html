@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        :root{
+            --table-bg:#bdd17a;
+            --table-border:#2c2727af;
+            --header-bg:#807bb6c1;
+            --caption-color:#130a46c1;
+            --header-text-color:white;
+            --header-text-size:1.5rem;
+            --body-text-color:rgb(186, 19, 47);
+            --font-text:'Times New Roman', Times, serif;
+            --radious:10px;
+            --spacing-y:0.5rem;
+            --spacing-x:1rem;
+            --text-size: 20px;
+        }
+        *{
+            box-sizing:border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 2rem;
+            font-family: var(--font-text);
+            color: var(--body-text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .table-wrapper{
+            width: 100%;
+            max-width: 600px;
+            background-color: var(--table-bg);
+            border: 2px solid var(--table-border);
+            border-radius: var(--radious);
+            overflow: hidden;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid var(--table-border);
+        }
+        caption{
+            padding: 1.25rem;
+            text-align: center;
+            font-size: var(--header-text-size);
+            color: var(--caption-color);
+            font-weight: 800;
+        }
+        thead tr{
+            background: var(--header-bg);
+            color: var(--header-text-color);
+        }
+        th,td{
+            text-align: center;
+            padding: var(--spacing-y) var(--spacing-x);
+            border: 1px solid black;
+        }
+        th{
+            font-size: var(--text-size);
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .numeric{
+            text-align: right;
+            /* padding-left: -120px; */
+            margin-left: -12px;
+        }
+        tfoot{
+            background-color: rgb(137, 193, 174);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-wrapper">
+        <table>
+            <caption>Table Heading</caption>
+            <thead>
+            <tr>
+                <th scope="col">Col1</th>
+                <th scope="col">col2</th>
+                <th scope="col">col3</th>
+                <th scope="col">col4</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Item1</td>
+                <td>item description</td>
+                <td>buyer1</td>
+                <td class="numeric">2</td>
+            </tr>
+             <tr>
+                <td>Item2</td>
+                <td>item description</td>
+                <td>buyer2</td>
+                <td class="numeric">4</td>
+            </tr>
+             <tr>
+                <td>Item3</td>
+                <td>item description</td>
+                <td>buyer3</td>
+                <td class="numeric">2</td>
+            </tr>
+             <tr>
+                <td>Item4</td>
+                <td>item description</td>
+                <td>buyer4</td>
+                <td class="numeric">4</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td class="numeric"> 12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
