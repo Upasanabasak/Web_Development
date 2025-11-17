@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            border: 5px solid pink;
+            border-radius: 12px;
+            /* height: 100%; */
+            width: 500px;
+            max-width: 90%;
+            /* align-items: center; */
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(226, 102, 123);
+        }
+
+        h4 {
+            color: rgb(168, 160, 160);
+            text-align: center;
+        }
+
+        label {
+            color: rgb(144, 17, 38);
+            font-size: 20px;
+        }
+
+        input {
+            margin: 8px 0;
+        }
+
+        form {
+            /* height: 100%; */
+            width: 100%;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            /* background-color: white; */
+            border: 2px solid palevioletred;
+            border-radius: 15px;
+            color: palevioletred;
+            /* padding: 16px 32px; */
+            padding: 15px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 20px 12px;
+            /* transition-duration: 0.4s; */
+            cursor: pointer;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+            min-width: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: palevioletred;
+        }
+
+        .button:hover {
+            color: white;
+            background-color: pink;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: white;
+            background-color: pink;
+            font-weight: 600;
+        }
+
+        marquee {
+            color: red;
+            font-weight: 600;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border-radius: 12px;
+            padding: 5px;
+            border: 3px solid pink;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behavior="alternative" direction="right" scrollamount="20">Last Date 31 Noverber 2025</marquee>
+    <div class="box">
+        <h1>Admission Form</h1>
+        <h4>XYZ College</h4>
+        <br><br>
+        <form action="#">
+            <label for="uname">Username:
+                <input type="text" class="uname" id="uname" required>
+            </label>
+            <label for="pword">Password:
+                <input type="text" class="pword" id="pword" maxlength="8" placeholder="At least 8 charecter" required>
+            </label>
+            <br><br>
+            <div class="btn">
+                <button class="button button1"><a href="submit.html">submit</a></button>
+                <button class="button button1">Reset</button>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>

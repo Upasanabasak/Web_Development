@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100%;
+            /* width: 100%; */
+            margin: 0;
+            padding: 24px;
+            display: grid;
+            place-items: center;
+        }
+        .box{
+            border: 6px solid rgb(125, 112, 137);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            margin: 10px;
+            font-size: 30px;
+            color: rgb(130, 126, 134);
+            margin: 20px;
+        }
+        form{
+            height: 100%;
+            margin: 10px;
+            font-weight: 300;
+            /* font-size: 20px; */
+        }
+        .button{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button input[type="submit"]{
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .button input[type="submit"]:hover{
+            color: white;
+            background-color: red;
+        }
+        input[type="radio"]
+        input[type="checkbox"]{
+            font-size: 25px;
+            font-weight: 300;
+        }
+        label{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        input[type="text"],
+        input[type="date"]{
+            width: 100%;
+            padding: 6px;
+        }
+        textarea{
+            min-height: 12px;
+            resize: horizontal;
+            min-width: 100px;
+        }
+        select{
+            padding: 10px 15px;
+            font-size: 15px;
+            font-weight: 500;
+            /* appearance: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Registration Form</h2>
+        <form action="#">
+            <label for="name">Name: </label>
+            <input type="text" class="name" id="name" maxlength="35">
+            <br><br>
+
+            <label for="address">Address: </label>
+            <textarea type="textarea" class="address" id="address"></textarea>
+            <br><br>
+
+            <label for="dob">Date of Birth: 
+            <input type="date" class="dob" id="dob">
+            </label>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" class="gender" id="gender">Male
+            <input type="radio" class="gender" id="gender">Female
+            <br><br>
+
+            <label for="hobby">Hobby: </label>
+            <input type="checkbox" name="hobby" id="hobby">Drawing
+            <input type="checkbox" name="hobby" id="hobby">Reading Books
+            <input type="checkbox" name="hobby" id="hobby">Gardening
+            <input type="checkbox" name="hobby" id="hobby">Gaming
+            <br><br>
+
+            <label for="role">Class: </label>
+            <select name="role" id="role">
+                <option value="">Select...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+               <div class="button">
+            <input type="submit" value="submit">
+        </div>
+        </form>
+       
+    </div>
+</body>
+
+</html>

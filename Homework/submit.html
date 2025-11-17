@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            border: 5px solid pink;
+            border-radius: 12px;
+            /* height: 100%; */
+            width: 500px;
+            max-width: 90%;
+            /* align-items: center; */
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        label {
+            color: rgb(144, 17, 38);
+            font-size: 20px;
+        }
+
+        input {
+            margin: 8px 0;
+        }
+
+        form {
+            /* height: 100%; */
+            width: 90%;
+        }
+        h1{
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: rgb(226, 102, 123);;
+        }
+        h4 {
+            color: rgb(168, 160, 160);
+            text-align: center;
+        }
+
+        button {
+            /* background-color: white; */
+            border: 2px solid palevioletred;
+            border-radius: 15px;
+            color: palevioletred;
+            /* padding: 16px 32px; */
+            padding: 15px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 20px 12px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+            margin: 30px 190px;
+            min-width: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: palevioletred;
+        }
+
+        button:hover {
+            color: white;
+            background-color: pink;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: white;
+            background-color: pink;
+            font-weight: 600;
+        }
+
+        form {
+            /* height: 100%; */
+            width: 100%;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="month"],
+        input[type="file"],
+        input[type="number"],
+        input[type="image"],
+        input[type="password"] {
+            border-radius: 12px;
+            padding: 5px;
+            border: 3px solid pink;
+            width: 100%;
+        }
+        textarea{
+            border-radius: 12px;
+            padding: 10px;
+            border: 3px solid pink;
+            width: 100%;
+            resize: verticals;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Registration Form</h1>
+        <h4>XYZ College</h4>
+        <form action="#">
+            <label for="fname">First Name:
+                <span class="req" aria-hidden="true">*</span>
+                <BR>
+                    
+                <input type="text" class="fname" id="fname" placeholder="Enter Your Name" required>
+            </label>
+            <br><br>
+
+            <label for="fname">Last Name:
+                <BR>
+                <input type="text" class="fname" id="fname" placeholder="Enter Your Name" required>
+            </label>
+            <br><br>
+
+            <label for="pe">Physical Eligibility 
+                <span class="req" aria-hidden="true">*</span>
+                <!-- <br> -->
+                <span style="margin-left: 20px;">
+                    <input type="radio" name="pe" id="pe" value="Yes">Yes
+                    <input type="radio" name="pe" id="pe" value="NO" style="margin-left: 10px;">No
+                </span>
+                
+            </label>
+            <br><br>
+
+            <label for="dob">Date of Birth:
+                <br>
+                <input type="date">
+            </label>
+            <br>
+
+            <label for="gender">Gender
+                <span class="req" aria-hidden="true">*</span>
+                <span style="margin-left: 20px;">
+                <input type="checkbox" name="gender" id="gender">Male
+                <input type="checkbox" name="gender" id="gender" style="margin-left: 10px;">Female
+                <input type="checkbox" name="gender" id="gender" style="margin-left: 10px;">Others
+                </span>
+                
+            </label>
+            <br><br>
+            <label for="adress">Address:
+                <br>
+                <textarea name="address" id="address" placeholder="Enter Your adress"></textarea>
+            </label>
+            <br><br>
+
+
+            <label for="mad">Madhyamik Result:
+                <br>
+                <input type="number" min="600" max="700" placeholder="Min 600 & Max 700">
+                <input type="file">
+            </label>
+            <br><br>
+
+            <label for="mad">High Secondary Result:
+                <br>
+                <input type="number" min="400" max="500" placeholder="Min 400 & Max 500">
+                <input type="file">
+            </label>
+
+            <label for="year">Year
+                <input type="month">
+            </label>
+            <label for="img">Upload Image:
+                <br>
+                <input type="file" accept="image/*">
+            </label>
+            
+            <button>Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
