@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registration Form</title>
+    <style>
+        /* Page background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #e9e6df;
+        }
+
+        /* Outer card that imitates paper with border */
+        .paper {
+            width: 520px;
+            margin: 28px auto;
+            background: #fff;
+            border: 6px solid #111;
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.06);
+            padding: 8px;
+        }
+
+        h1.title {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', serif;
+            margin: 6px 0 10px;
+            letter-spacing: 1px;
+            font-size: 28px;
+            text-decoration: underline;
+        }
+
+        table.form-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        /* left column (labels) */
+        table.form-table td.label {
+            width: 150px;
+            padding: 10px 8px;
+            vertical-align: top;
+            background: #f4f4f4;
+            border-right: 2px solid #bbb;
+            font-weight: 700;
+        }
+
+        /* right column (controls) */
+        table.form-table td.control {
+            padding: 10px 12px;
+            vertical-align: top;
+        }
+
+        input[type=text],
+        input[type=password],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px 8px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            outline: none;
+            font-size: 14px;
+            background: #fff;
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        .games-list label {
+            display: block;
+            margin: 3px 0;
+            font-weight: 400
+        }
+
+        .gender-row {
+            padding-top: 6px
+        }
+
+        .age-select {
+            width: 40%;
+            max-width: 160px
+        }
+
+        .file-row input[type=file] {
+            font-size: 13px
+        }
+
+        /* Buttons at bottom similar to image */
+        .buttons {
+            display: flex;
+            gap: 12px;
+            padding: 12px;
+            justify-content: space-between;
+        }
+
+        .buttons button {
+            width: 31%;
+            padding: 8px 10px;
+            border: 2px solid #333;
+            background: #f7f7f7;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* make small caption under some controls */
+        .small {
+            font-size: 12px;
+            color: #444
+        }
+
+        /* responsive */
+        @media (max-width:560px) {
+            .paper {
+                width: 92%
+            }
+
+            table.form-table td.label {
+                display: block;
+                width: 100%;
+                border-right: none
+            }
+
+            table.form-table td.control {
+                display: block
+            }
+
+            .buttons {
+                flex-direction: column
+            }
+
+            .buttons button {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="paper">
+        <h1 class="title">Registration Form</h1>
+
+        <form>
+            <table class="form-table" role="presentation">
+                <tr>
+                    <td class="label">Enter Name</td>
+                    <td class="control"><input type="text" name="name" placeholder="Enter Name"></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Enter Password</td>
+                    <td class="control"><input type="password" name="password" placeholder="Enter Password"></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Enter Address</td>
+                    <td class="control"><textarea name="address" rows="4" placeholder="Enter Address"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Select Game</td>
+                    <td class="control games-list">
+                        <label><input type="checkbox" name="game" value="hockey"> Hockey</label>
+                        <label><input type="checkbox" name="game" value="football"> Football</label>
+                        <label><input type="checkbox" name="game" value="badminton"> Badminton</label>
+                        <label><input type="checkbox" name="game" value="cricket"> Cricket</label>
+                        <label><input type="checkbox" name="game" value="volley"> Volleyball</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Gender</td>
+                    <td class="control gender-row">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Select your age</td>
+                    <td class="control">
+                        <select name="age" class="age-select">
+                            <option>Select</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">Select Photo</td>
+                    <td class="control file-row"><input type="file" name="photo"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="padding:6px 8px;">
+                        <div class="buttons">
+                            <button type="button" onclick="alert('Button clicked')">Click Me</button>
+                            <button type="reset">Reset</button>
+                            <button type="submit">Submit Form</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
