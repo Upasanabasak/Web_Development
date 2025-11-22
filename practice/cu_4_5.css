@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 52px;
+    margin: 10px;
+}
+
+header {
+    background-color: rgb(126, 126, 189);
+    height: 30%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    background-color: #afacac;
+    padding: 10px;
+    font-weight: 600;
+
+}
+
+li:hover {
+    /* display: inline; */
+    /* background-color: aliceblue; */
+    /* text-decoration: underline; */
+    text-decoration-color: rgb(135, 134, 134);
+    cursor: pointer;
+    /* color: white; */
+}
+
+/* .stream {
+            margin: 22px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            font-size: 20PX;
+        }
+
+.stream ol {
+            display: flex;
+            gap: 40px;
+            list-style-type: lower-roman;
+
+} */
+
+/* .heading {
+    flex: 1;
+} */
+
+/* .dropdown{
+    position: relative;
+    display: inline-block;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* text-align: center; */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+} */
+
+footer {
+    background-color: rgb(126, 126, 189);
+    /* margin-top: 40px; */
+    padding: 20px;
+    text-align: center;
+}
+
+.side-bar {
+    height: 470px;
+    border: 1px solid rgb(161, 159, 159);
+    width: 25%;
+    background-color: #efecec;
+    text-align: center;
+
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    padding: 8px 0;
+}
+
+p {
+    padding: 20px;
+}
+
+.heading1 {
+    font-style: italic;
+}
+
+.heading2 {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.information {
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.main-content {
+    display: flex;
+    min-height: 400px;
+}
+
+.picture {
+    display: flex;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.main-list {
+    padding: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    .nav-bar {
+        font-size: 12px;
+        grid-area: 1 / span 5;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #efa6a6;
+            display: flex;
+            justify-content: center;
+            font-size: 23px;
+            gap: 10px;
+            width: 100%;
+            /* padding: 10px; */
+            font-weight: 900;
+        }
+
+        nav,
+        li {
+            float: right;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            list-style-type: none;
+        }
+
+        nav li a:hover {
+            background-color: darksalmon;
+            display: block;
+            /* background-color: #fff; */
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            /* background-color: #f9f9f9; */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        img{
+            width: 10%;
+            border-radius: 100px;
+            float: left;
+        }
+        .stream {
+            margin: 22px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            font-size: 20PX;
+        }
+
+        .stream ol {
+            display: flex;
+            gap: 40px;
+            list-style-type: lower-roman;
+
+        }
+
+        .heading {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav">
+        <img src="https://www.cnu.org/sites/default/files/styles/public_square_feature_image/public/BostonCollege1.jpg?itok=iKc35HST" alt="logo">
+        <p> XYZ College</p>
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Admission</a></li>
+        <li><a href="#">Fee Structure</a></li>
+        <li><a href="#">Facilities</a></li>
+        
+    </ul>
+    <ol>
+            <li class="heading">
+                <strong style="padding: 10px; color: cadetblue; font-weight: 1000; display: block;">Arts Stream</strong>
+                <ul>
+                    <li>Biochemistry</li>
+                    <li>Botany</li>
+                    <li>Chemistry</li>
+                    <li>Computer Science</li>
+                    <li>Economics</li>
+                    <li>Food & Nutrition</li>
+                    <li>Geography</li>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Physiology</li>
+                    <li>Psychology</li>
+                    <li>Zoology</li>
+                </ul>
+            </li>
+            <li class="heading">
+                <strong style="padding: 10px; color: cadetblue; font-weight: 1000; display: block;">Science Stream</strong>
+                <ul>
+                    <li>Bengali</li>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>History</li>
+                    <li>Journalism & Mass Communication</li>
+                    <li>Philosophy</li>
+                    <li>Political Science</li>
+                    <li>Sanskrit</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <footer>
+        <p>contact: 9176543245</p>
+        <p>address: 55a, hfgfg,ghff</p>
+    </footer>
+</body>
+
+</html>

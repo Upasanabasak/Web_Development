@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                "header header"
+                "main breaking"
+                "footer footer";
+            border: 1px solid black;
+
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        footer {
+            grid-area: footer;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .breaking {
+            grid-area: breaking;
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .main h2,
+        .breaking h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .main article {
+            margin-bottom: 10px;
+        }
+
+        .main article h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .main article p,
+        .ticker li {
+            font-size: 13px;
+            line-height: 1.2;
+        }
+
+        .ticker {
+            height: 180px;
+            overflow: hidden;
+            /* border: 1px solid gray; */
+            padding: 8px;
+        }
+
+        .ticker ul {
+            list-style: none;
+            animation: scroll 12s linear infinite;
+        }
+
+        .ticker li {
+            padding: 6px 4px;
+            border-bottom: 1px solid #eee;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            header
+        </header>
+        <section class="main">
+            <h2>Main Section</h2>
+            <article>
+                <h3>News 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos
+                    cum delectus amet ab iusto minus asperiores, nihil beatae officiis, consequuntur
+                    numquam sunt odio, quisquam at optio quibusdam ratione nesciunt.</p>
+            </article>
+            <article>
+                <h3>News 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos
+                    cum delectus amet ab iusto minus asperiores, nihil beatae officiis, consequuntur
+                    numquam sunt odio, quisquam at optio quibusdam ratione nesciunt.</p>
+            </article>
+            <article>
+                <h3>News 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dignissimos
+                    cum delectus amet ab iusto minus asperiores, nihil beatae officiis, consequuntur
+                    numquam sunt odio, quisquam at optio quibusdam ratione nesciunt.</p>
+            </article>
+        </section>
+        <aside class="breaking">
+            <h2>Breaking News</h2>
+            <div class="ticker">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quo.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quo.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quo.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quo.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quo.</li>
+                </ul>
+            </div>
+        </aside>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+
+</html>
