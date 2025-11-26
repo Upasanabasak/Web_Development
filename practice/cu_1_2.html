@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
     <style>
-        body{
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
             background-color: rgb(247, 237, 225);
         }
-        table{
+
+        table {
             /* border-radius: 1px  solid rgb(244, 240, 10); */
             border-collapse: collapse;
             width: 80%;
-            margin: auto;
-            box-shadow: 0 5px 8px rgba(0,0,0,0.5);
+            margin: auto; 
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
         }
-        table:hover{
+
+        table:hover {
             /* transform: scale(1.05); */
-            transform:  scaleY(1.05);
+            transform: scaleY(1.05);
         }
-        th, td{
+
+        th,
+        td {
             padding: 10px;
             margin: 20px;
             text-align: center;
             border: 1px solid rgb(19, 27, 63);
-            
+
         }
-        tr:nth-child(even){
+
+        tr:nth-child(even) {
             background-color: rgb(235, 250, 187);
         }
-        tr:hover{
+
+        tr:hover {
             background-color: cadetblue;
         }
-        th{
+
+        th {
             background-color: rgb(151, 210, 190);
             color: azure;
         }
-        caption{
+
+        caption {
             caption-side: top;
             font-weight: bolder;
-            margin: 20px 0 20px 0 ;
+            margin: 20px 0 20px 0;
             font-size: 20px;
         }
     </style>
 </head>
+
 <body>
     <table>
         <caption>Books</caption>
         <tr>
-        <th>Product Name</th>
-        <th>Category</th>
-        <th>Price</th>
-        <th>Available Stock</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Available Stock</th>
         </tr>
         <tr>
             <td>Anci C</td>
@@ -91,4 +107,5 @@
         </tr>
     </table>
 </body>
+
 </html>

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>audio</title>
+    <style>
+        .song{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
     <h3>Adding audio to webpage</h3>
 
@@ -19,8 +27,14 @@
     </ul>
     <br>
     <hr>
-    <audio controls muted
-    src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-    ></audio>
+    <div class="song">
+        <audio controls muted src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+    </div>
+    <hr>
+
+    <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+    <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
 </body>
+
 </html>
